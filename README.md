@@ -13,15 +13,21 @@ After booting up, log into your Pi using the terminal, SSH, or a serial connecti
 
 To download the script, you will need  git on your Pi. If you don't already have it, install it:
 
+```shell
 sudo apt-get install -y git
+```
 
 Download the script from Github:
 
+```shell
 git clone https://github.com/StarshipEngineer/onionpi-setup.git
+```
 
 Before proceeding, you may want to upgrade packages:
 
+```shell
 sudo apt-get update && sudo apt-get -y upgrade
+```
 
 #Using the Script
 
