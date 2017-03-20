@@ -34,6 +34,10 @@ sudo sed -i '/iface wlan1 inet static/a\
   netmask 255.255.255.0
 ' /etc/network/interfaces
 
+sudo sed -i '/iface wlan0 inet/a\
+wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+' /etc/network/interfaces
+
 sudo ifconfig wlan1 192.168.42.1
 
 # Configure hostapd.conf; edit values in hostapd.demo if desired
