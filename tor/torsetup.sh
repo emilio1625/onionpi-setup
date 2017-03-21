@@ -22,11 +22,12 @@ sudo  iptables  -F
 sudo  iptables  -t  nat  -F
 
 # Set new iptables rules
-sudo  iptables  -t  nat  -A  PREROUTING  -i  wlan1  -p  tcp  --dport  22  -j  REDIRECT--to-ports  22
 
-sudo  iptables  -t  nat  -A  PREROUTING  -i  wlan1  -p  udp  --dport  53  -j REDIRECT  --to-ports  53
+sudo iptables -t nat -A PREROUTING -i wlan0 -p tcp --dport 22 -j REDIRECT --to-ports 22
 
-sudo  iptables  -t  nat  -A  PREROUTING  -i  wlan1  -p  tcp  --syn  -j  REDIRECT  --toports  9040
+sudo iptables -t nat -A PREROUTING -i wlan0 -p udp --dport 53 -j REDIRECT --to-ports 53
+
+sudo iptables -t nat -A PREROUTING -i wlan0 -p tcp --syn -j REDIRECT --to-ports 9040
 
 sudo  sh  -c  "iptables-save  >  /etc/iptables.ipv4.nat"
 
