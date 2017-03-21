@@ -31,7 +31,9 @@ sudo  iptables  -t  nat  -A  PREROUTING  -i  wlan1  -p  tcp  --syn  -j  REDIRECT
 sudo  sh  -c  "iptables-save  >  /etc/iptables.ipv4.nat"
 
 # Create a log file
-sudo  touch  /var/log/tor/notices.log sudo  chown  debian-tor  /var/log/tor/notices.log sudo  chmod  644  /var/log/tor/notices.log
+sudo touch  /var/log/tor/notices.log
+sudo chown  debian-tor  /var/log/tor/notices.log
+sudo chmod  644  /var/log/tor/notices.log
 
 # Start Tor and enable it on boot
 sudo  service  tor  start
