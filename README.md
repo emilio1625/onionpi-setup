@@ -24,7 +24,7 @@ sudo apt-get install -y git
 Download the script from Github:
 
 ```shell
-git clone https://github.com/StarshipEngineer/onionpi-setup.git
+git clone https://github.com/emilio1625/onionpi-setup.git
 ```
 
 Before proceeding, you may want to upgrade packages:
@@ -33,5 +33,6 @@ Before proceeding, you may want to upgrade packages:
 sudo apt-get update && sudo apt-get -y upgrade
 ```
 
-#Using the Script
+Using the Script
+----------------
 

@@ -1,9 +1,9 @@
 #!/bin/bash
 
-Make scripts executable
-sudo chmod +x wifisetup.sh
-sudo chmod +x torsetup.sh
+# Make scripts executable
+chmod +x wifi/wifisetup.sh
+chmod +x tor/torsetup.sh
 
+sudo wifi/wifisetup.sh
+sudo tor/torsetup.sh
 
-sudo ./wifisetup.sh
-sudo ./torsetup.sh
